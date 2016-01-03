@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+<link rel="shortcut icon" href="smile.ico" type="image/x-icon" >
+    <title>Reginald's Practice Website</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <link rel="stylesheet" href="./mystyle.css" type="text/css" />
+</head>
+<body style="position:relative;top:50px;width:100%;margin:0;">
+<marquee><img src="http://www.animatedimages.org/data/media/707/animated-welcome-image-0135.gif"></marquee>
+
+<a href="https://twitter.com/baoprenuda" target="_blank"><img src="http://www.niftybuttons.com/scribble/twitter.png"></a>
+<a href="https://www.facebook.com/reginald.m.scott"target="_blank"><img src="http://www.niftybuttons.com/scribble/facebook.png"></a>
+
+  <center><h1 id="mainHeading"style="color:#1960ED;font-size:150%;"><u><strong> Click me for a hint</h1></center></u></strong>
+  <center><p>How fast are your reflexes? Click on the boxes and circles with a time under 0.2 seconds to win!</p></center>
+<center><p class="bold">Your time: <span id="time">0</span> Seconds</p></center>
+<hr>
+  <div id="box"></div>
+<center><u><h3> Two of my favorite playlists on Spotify, enjoy!<h3></u></center>
+<div class="container">
+<iframe src="https://embed.spotify.com/?uri=spotify:user:spotify:playlist:7lIVkvelOfhq8eoBNmPl4A" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+</div>
+<div class="container">
+<iframe src="https://embed.spotify.com/?uri=spotify:user:spotify:playlist:3SXtTLpEuiEgovsSM6o4bF" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+</div>
+<hr>
+  <script type="text/javascript">
+var headline = document.getElementById("mainHeading");
+headline.onclick = function () {
+headline.innerHTML = "“Tell a man there are 300 billion stars in the universe and he’ll believe you.  Tell him a bench has wet paint on it and he’ll have to touch it to be sure.” – Murphy’s Law";
+};
+  function getRandomColor() {
+      var letters = '0123456789ABCDEF'.split('');
+      var color = '#';
+      for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+  var clickedTime; var createdTime; var reactionTime;
+  function makeBox(){
+    createdTime=Date.now();
+    var time=Math.random();
+    time=time*5000;
+    setTimeout(function(){
+      if(Math.random()>0.5){
+        document.getElementById("box").style.borderRadius="100px";
+      }else{
+        document.getElementById("box").style.borderRadius="0";
+      }
+      var top=Math.random();
+      top=top*500;
+      var left=Math.random();
+      left=left*300;
+
+      document.getElementById("box").style.top=top+"px";
+      document.getElementById("box").style.left=left+"px";
+
+      document.getElementById("box").style.backgroundColor=getRandomColor();
+      document.getElementById("box").style.display="block";
+      createdTime=Date.now()
+    }, time);
+  }
+document.getElementById("box").onclick=function(){
+clickedTime=Date.now();
+reactionTime=(clickedTime-createdTime)/1000;
+document.getElementById("time").innerHTML=reactionTime;
+  this.style.display="none";
+  makeBox();
+}
+makeBox();
+</script>
+<div class="thirdPart" style="list-style:none; ">
+<center><h3><u>Essential Things to Remember When Creating Websites</u></h3></center>
+<center><button id="textCreator" style="list-style:none;">Find Out!</button></center>
+<center><div id="emptyDiv" style="list-style:none; "></div></center>
+  <script type="text/javascript">
+document.getElementById("textCreator").onclick=function(){
+document.getElementById("emptyDiv").innerHTML="<ul><li>1)   What is the purpose of the website? </li><li>2)  Scalability and planning</li><li>3)  User-Friendly Navigation</li><li>4)  Well-Chosen Images</li><li>5)  Search Engine Optimization</li><li>6)  Make it Mobile</li></ul>";
+}
+  </script>
+<hr>
+</div>
+<div class="fourthPart" >
+<center><h3><u>3 Reasons Why I Want To Create A Website</u></h3></center>
+<center><ol></center>
+<center><li> Constantly building websites can turn you into an expert.</li></center>
+<center><li> A website can increase employment opportunities. </li></center>
+<center><li>You can develop your creativity and develop essential job skills.</li></center>
+</ol>
+</div>
+<hr>
+<div class="fifthPart">
+<h2 "><u><center>The Leading Websites on The Internet</u></h2></center>
+<center><table></center>
+<tr><th>Site</th><th>Domain</th><th>Type</th></center>
+<tr><td>Google</td><td><a href="https://www.google.com/" target=_blank>www.google.com</a></td><td>Search engine</td></center>
+<tr><td>Facebook</td><td><a href="https://www.facebook.com"  target=_blank>www.facebook.com</a></td><td>Social network</td></center>
+<tr><td>YouTube</td><td><a href="https://www.youtube.com"  target=_blank>www.youtube.com</a></td><td>Video sharing</td></center>
+</table>
+</div>
+<hr>
+<script type="text/javascript">
+var myArray = ["Initializing.....", "Standby......"] ;
+var i = 0;
+while( i < myArray.length){
+  alert("System Status: " + myArray[i]);
+  i++;
+}
+var name= prompt("Hello visitor, what is your name?");
+alert( name.toUpperCase() + ", welcome to my practice website! In javascript the date is currently: " + Date.now());
+</script>
+<center><h1 style="font-size:45px"; ><u><strong><center>JavaScript Games</u></h1></center></strong></center>
+<div class="fifthPart">
+<center><h2>Game #1: What am I guessing Human?</h2></center>
+<center><div class="guessNumber"></center>
+<center><p>Guess a  number from 0 to 10</p></center>
+ <center><input id="answer"/></center><br>
+  <center><button id="myButtonz">Guess!</button></center>
+  <script type="text/javascript">
+  document.getElementById("myButtonz").onclick=function(){
+var x=Math.random();
+x=11*x;
+x=Math.floor(x);
+if (x==document.getElementById("answer").value){
+  alert("That's Correct!");
+return;
+}
+if(document.getElementById("answer").value>10){
+alert("That's not between 0 and 10.......");
+return;
+}
+if(document.getElementById("answer").value<0){
+alert("That's not between 0 and 10.......");
+return;
+}
+if ( isNaN(document.getElementById("answer").value) ){
+alert("That's not even a number!");
+return;
+}else{
+  alert("That's wrong, my number was " + x);
+}
+}
+</script>
+</div>
+<hr>
+<div class="fifthPart">
+<center><h2>Game #2: I bet I can guess the number you're thinking of!</h2></center>
+<center><p>What number are you thinking of between 0 and 100?</p></center>
+<center><input id="myNumber" /></center><br>
+<center><button id="guess">Submit!</button></center></center>
+<script type="text/javascript">
+  document.getElementById("guess").onclick=function(){
+    var gotit=false; var guesses=1;var x;
+    while(gotit==false) {
+    x=Math.random();
+    x=101*x;
+    x=Math.floor(x);
+if ( isNaN(document.getElementById("myNumber").value) ){
+alert("That's not even a number!");
+return;
+}if (document.getElementById("myNumber").value==x){
+gotit=true;
+}if (document.getElementById("myNumber").value>100){
+alert("That's not between 0 and 100.......");
+return;
+}
+if (document.getElementById("myNumber").value<0){
+alert("That's not between 0 and 100.......");
+return;
+}else{
+  guesses++;
+}
+}
+alert("Got it, your number was "+x+" . It only took me "+guesses+" guesses, try again!");
+}
+</script>
+</div>
+</body>
+</html>
