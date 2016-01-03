@@ -1,0 +1,265 @@
+html { 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#main
+{         
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+}
+body {
+background-image:url(subtlewhitefeathers.png);
+background-attachment: fixed;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+background-repeat:no-repeat;
+height:100%;
+width: 100%;
+background-position: center;
+}
+ul {
+    list-style-type: none;
+}
+li {
+  margin: 15px 0;
+background-attachment: fixed;
+}
+div.container{
+display:inline-block;
+width: 50%;
+float: left;
+text-align: center;
+}
+.were{
+height:9000px;
+}
+ .fixed-width {
+width:1150px;
+margin: 0 auto;
+ }
+#Welcome {
+float:left;
+color:red;
+height:41px;
+width:200px;
+font-size:200%;
+}
+#Welcome p {
+margin: 13px 0 0 50px;
+}
+#title-bar {
+ background-color:white;
+ width:100%;
+ height:110px;
+ }
+ #news-title {
+padding:35px 0 0 10px;
+float:left;
+font-size:50px;
+color:black;
+ }
+#firstPart{
+color:red;
+font-family:"Lucida Console", Monaco, monospace;
+align="center";
+font-size:100%;
+}
+.secondPart{
+color:black;
+font-family:" Inconsolata", "Book Antiqua", Palatino, serif;
+align="center";
+font-size:150%;
+}
+.thirdPart{
+color:red;
+font-family:"Gotham";
+align="center";
+font-size:150%;
+}
+.fourthPart{
+color:black;
+font-family:"Proxima Nova", cursive, sans-serif;
+align="center";
+font-size:150%;
+}
+.fifthPart{
+color:black;
+font-family:"Avenir", "Book Antiqua", Palatino, serif;
+align="center";
+font-size:150%;
+}
+a:visited{
+color:black;
+}
+.searchstuff{
+position:relative;
+float:left;
+align="center";
+top:-15px;
+color:black;
+}
+.guessNumber{
+position:relative;
+float:left;
+color:black;
+align="center";
+}
+.wrapper {
+    text-align: center;
+height:46px
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+}
+button{
+background-color:#FBF1D7;
+border:10px #9192A6 inset;
+border-radius:50px;
+}
+ol{
+text-decoration:none;
+}
+#myButton{
+position:relative;
+top:-8px;
+}
+.bold{
+  font-weight:bold;
+}
+#box{
+width:200px;
+height:200px;
+background-color:black;
+display:none;
+position:relative;
+
+}
+html { 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#main
+{         
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+}
+ .fixed-width {
+width:1150px;
+margin: 0 auto;
+ }
+#Welcome {
+float:left;
+color:black;
+height:41px;
+width:200px;
+font-size:200%;
+}
+#Welcome p {
+margin: 13px 0 0 50px;
+ }
+#title-bar {
+ background-color:white;
+ width:100%;
+ height:110px;
+ }
+ #news-title {
+padding:35px 0 0 10px;
+float:left;
+font-size:50px;
+color:black;
+ }
+#firstPart{
+color:red;
+font-family:"Lucida Console", Monaco, monospace;
+align="center";
+font-size:100%;
+}
+.secondPart{
+color:black;
+font-family:" Inconsolata", "Book Antiqua", Palatino, serif;
+align="center";
+font-size:150%;
+}
+.thirdPart{
+color:black;
+font-family:"Gotham";
+align="center";
+font-size:150%;
+}
+.fourthPart{
+color:black;
+font-family:"Proxima Nova", cursive, sans-serif;
+align="center";
+font-size:150%;
+}
+.fifthPart{
+color:black;
+font-family:"Avenir", "Book Antiqua", Palatino, serif;
+align="center";
+font-size:150%;
+}
+a:visited{
+color:black;
+}
+.searchstuff{
+position:relative;
+float:left;
+align="center";
+top:-15px;
+color:black;
+}
+.guessNumber{
+position:relative;
+float:left;
+color:black;
+align="center";
+}
+.wrapper {
+    text-align: center;
+height:46px
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+}
+button{
+background-color:#FBF1D7;
+border:10px #9192A6 inset;
+border-radius:50px;
+}
+ol{
+text-decoration:none;
+}
+#myButton{
+position:relative;
+top:-8px;
+}
+.bold{
+  font-weight:bold;
+}
+body{
+  font-family:Verdana, Geneva, sans-serif;
+width: 100%;
+}
+#box{
+width:200px;
+height:200px;
+background-color:black;
+display:none;
+position:relative;
+}
